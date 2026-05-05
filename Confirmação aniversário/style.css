@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #fff7f9, #fdfdfd);
+    color: #333;
+}
+
+/* Container */
+.conteudo {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* Layout */
+.c1 {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    
+}
+
+/* Cards */
+.conf, .info {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    flex: 1;
+    min-width: 300px;
+    border: 1px solid #f1f1f1;
+}
+
+.conf {
+    max-height:60vh;
+}
+
+/* Título principal */
+h2 {
+    text-align: center;
+    color: #ff6b6b;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Subtítulos */
+h3 {
+    color: #4a6fa5;
+    margin-bottom: 10px;
+}
+
+/* Inputs */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    border: 1px solid #e6e6e6;
+    outline: none;
+    transition: 0.2s;
+    background: #fafafa;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff6b6b;
+    background: #fff;
+}
+
+/* Botão */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background: #ff6b6b;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #ff4d4d;
+    transform: translateY(-1px);
+}
+
+/* Texto info */
+.info p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.info a {
+    color: #ff6b6b;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Imagens */
+.info img {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+/* Parte de baixo */
+.c2 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Botão grupo */
+.c2 h1 {
+    display: inline-block;
+    background: #fff0f3;
+    color: #ff6b6b;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Imagem convite */
+.c2 img {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 16px;
+    transition: 0.3s;
+}
+
+.c2 img:hover {
+    transform: scale(1.03);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .c1 {
+        flex-direction: column;
+    }
+}

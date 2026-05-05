@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmação Aniversário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="conteudo">
+        <div class="c1">
+            <div class="conf">
+                <h2>Confirmação Aniversário</h2>
+                <form id="meuFormulario">
+                    <input type="text" name="Nome" placeholder="Nome" required>
+                    <input type="text" name="Whatsapp" placeholder="Whatsapp" required>
+                    <textarea name="Conj" placeholder="Cônjuge"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+                <br>
+                <h3>DEMORA UM POUCO PRA CARREGAR DEPOIS DE ENVIAR, EU N SOUBE CONSERTAR!</h3>
+            </div>
+            <div class="info">
+                <h3>Informações do Evento</h3>
+                <p>O evento acontecerá no dia 6 de Junho de 2026 no <a
+                        href="https://www.instagram.com/tropicalgastrobar/">Tropical Gastrobar</a> às 18h.</p>
+
+                <h4>Cardápio</h4>
+                <img src="cardapio tropical.jpg" alt="" srcset="">
+                <img src="cardapio tropical 2.jpg" alt="" srcset="">
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+        <div class="c2">
+
+            <a href="https://chat.whatsapp.com/JU0xhzvfkHu8qt9ZszoEFz">
+                <h1>Grupo no Whatsapp</h1>
+            </a>
+            <br>
+
+            <a href="https://chat.whatsapp.com/JU0xhzvfkHu8qt9ZszoEFz" title="Grupo no Whatsapp"> <img
+                    src="convite niver.png" alt="" srcset=""> </a>
+
+
+        </div>
+
+    </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby9UOwx0g3cEBqgToR4uxFl7YOU6MKaRnSJ_Z3ucoW_rQwevCsko4c4XuRKy9tVjSKz/exec';
+        const form = document.getElementById('meuFormulario');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert('Sucesso!'))
+                .catch(error => console.error('Erro!', error.message));
+        });
+    </script>
+
+
+
+</body>
+
+</html>
